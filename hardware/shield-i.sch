@@ -1,0 +1,445 @@
+EESchema Schematic File Version 2
+LIBS:dinghy
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:trinamic
+LIBS:mechanical
+LIBS:dinghy-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R202
+U 1 1 5A82F0E3
+P 3950 2400
+F 0 "R202" V 4030 2400 50  0000 C CNN
+F 1 "4k7" V 3950 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3880 2400 50  0001 C CNN
+F 3 "" H 3950 2400 50  0001 C CNN
+	1    3950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D201
+U 1 1 5A82F0EA
+P 3950 2000
+F 0 "D201" H 3950 2100 50  0000 C CNN
+F 1 "LED" H 3950 1900 50  0000 C CNN
+F 2 "LEDs:LED_1206_HandSoldering" H 3950 2000 50  0001 C CNN
+F 3 "" H 3950 2000 50  0001 C CNN
+	1    3950 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C201
+U 1 1 5A82F0F1
+P 3600 2000
+F 0 "C201" H 3625 2100 50  0000 L CNN
+F 1 "100µ/35V" H 3200 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 3638 1850 50  0001 C CNN
+F 3 "" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R201
+U 1 1 5A82F0F8
+P 3600 3350
+F 0 "R201" V 3680 3350 50  0000 C CNN
+F 1 "10k" V 3600 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3530 3350 50  0001 C CNN
+F 3 "" H 3600 3350 50  0001 C CNN
+	1    3600 3350
+	1    0    0    -1  
+$EndComp
+Text Label 3200 3000 0    60   ~ 0
+FAN2
+$Comp
+L GND #PWR202
+U 1 1 5A82F100
+P 3600 3600
+F 0 "#PWR202" H 3600 3350 50  0001 C CNN
+F 1 "GND" H 3600 3450 50  0000 C CNN
+F 2 "" H 3600 3600 50  0001 C CNN
+F 3 "" H 3600 3600 50  0001 C CNN
+	1    3600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR204
+U 1 1 5A82F106
+P 3950 3600
+F 0 "#PWR204" H 3950 3350 50  0001 C CNN
+F 1 "GND" H 3950 3450 50  0000 C CNN
+F 2 "" H 3950 3600 50  0001 C CNN
+F 3 "" H 3950 3600 50  0001 C CNN
+	1    3950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR201
+U 1 1 5A82F10C
+P 3600 2400
+F 0 "#PWR201" H 3600 2150 50  0001 C CNN
+F 1 "GND" H 3600 2250 50  0000 C CNN
+F 2 "" H 3600 2400 50  0001 C CNN
+F 3 "" H 3600 2400 50  0001 C CNN
+	1    3600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02_Male J201
+U 1 1 5A82F112
+P 4800 2700
+F 0 "J201" H 4800 2800 50  0000 C CNN
+F 1 "Fan2" H 4800 2500 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4800 2700 50  0001 C CNN
+F 3 "" H 4800 2700 50  0001 C CNN
+	1    4800 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q_NMOS_GDS Q201
+U 1 1 5A82F119
+P 3850 3000
+F 0 "Q201" H 4050 3050 50  0000 L CNN
+F 1 "IRLR7843PbF" H 4050 2950 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-3_TabPin2" H 4050 3100 50  0001 C CNN
+F 3 "" H 3850 3000 50  0001 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2600 4600 2600
+Wire Wire Line
+	4250 1700 4250 2600
+Wire Wire Line
+	3950 2550 3950 2700
+Wire Wire Line
+	3950 2700 3950 2800
+Wire Wire Line
+	4600 2700 3950 2700
+Connection ~ 3950 2700
+Wire Wire Line
+	3950 2250 3950 2150
+Wire Wire Line
+	3600 1700 3600 1850
+Wire Wire Line
+	3600 2150 3600 2400
+Wire Wire Line
+	3950 3200 3950 3600
+Wire Wire Line
+	3150 3000 3600 3000
+Wire Wire Line
+	3600 3000 3650 3000
+Wire Wire Line
+	3600 3000 3600 3200
+Connection ~ 3600 3000
+Wire Wire Line
+	3600 3500 3600 3600
+Wire Wire Line
+	3600 1700 3950 1700
+Wire Wire Line
+	3950 1700 4250 1700
+Wire Wire Line
+	3950 1550 3950 1700
+Wire Wire Line
+	3950 1700 3950 1850
+Connection ~ 3950 1700
+$Comp
+L VMot #PWR203
+U 1 1 5A82F130
+P 3950 1550
+F 0 "#PWR203" H 3950 1400 50  0001 C CNN
+F 1 "VMot" H 3950 1690 50  0000 C CNN
+F 2 "" H 3950 1550 50  0001 C CNN
+F 3 "" H 3950 1550 50  0001 C CNN
+	1    3950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2150 8500 2150
+Wire Wire Line
+	8600 2250 8500 2250
+Wire Wire Line
+	8600 2350 8300 2350
+Wire Wire Line
+	8600 2450 8550 2450
+Wire Wire Line
+	8600 2550 8550 2550
+Wire Wire Line
+	8600 2650 8500 2650
+Wire Wire Line
+	8600 2750 8500 2750
+Wire Wire Line
+	8600 3600 8500 3600
+Wire Wire Line
+	8600 3700 8500 3700
+Wire Wire Line
+	8600 3800 8500 3800
+Wire Wire Line
+	8600 3900 8150 3900
+Wire Wire Line
+	8600 4000 8500 4000
+Wire Wire Line
+	8600 4100 8300 4100
+Wire Wire Line
+	8600 4200 8150 4200
+Wire Wire Line
+	8600 4300 8150 4300
+Wire Wire Line
+	8600 4400 8300 4400
+Wire Wire Line
+	8600 2850 8500 2850
+Wire Wire Line
+	8600 2950 8500 2950
+Text Label 8150 3900 0    60   ~ 0
+ENDSTOP
+Wire Wire Line
+	8600 4500 8000 4500
+Wire Wire Line
+	8600 3050 8500 3050
+$Comp
+L +5V #PWR211
+U 1 1 5A837A34
+P 8300 4100
+F 0 "#PWR211" H 8300 3950 50  0001 C CNN
+F 1 "+5V" H 8300 4240 50  0000 C CNN
+F 2 "" H 8300 4100 50  0001 C CNN
+F 3 "" H 8300 4100 50  0001 C CNN
+	1    8300 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VMot #PWR212
+U 1 1 5A837A3A
+P 8300 4400
+F 0 "#PWR212" H 8300 4250 50  0001 C CNN
+F 1 "VMot" H 8300 4540 50  0000 C CNN
+F 2 "" H 8300 4400 50  0001 C CNN
+F 3 "" H 8300 4400 50  0001 C CNN
+	1    8300 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VMot #PWR207
+U 1 1 5A837A40
+P 8000 4500
+F 0 "#PWR207" H 8000 4350 50  0001 C CNN
+F 1 "VMot" H 8000 4640 50  0000 C CNN
+F 2 "" H 8000 4500 50  0001 C CNN
+F 3 "" H 8000 4500 50  0001 C CNN
+	1    8000 4500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8450 4500 0    60   Input ~ 0
+VMot
+Text GLabel 8500 2150 0    51   Input ~ 0
+SCL
+Text GLabel 8500 2250 0    51   Input ~ 0
+SDA
+$Comp
+L GND #PWR210
+U 1 1 5A837A49
+P 8300 2350
+F 0 "#PWR210" H 8300 2100 50  0001 C CNN
+F 1 "GND" H 8300 2200 50  0000 C CNN
+F 2 "" H 8300 2350 50  0001 C CNN
+F 3 "" H 8300 2350 50  0001 C CNN
+	1    8300 2350
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR208
+U 1 1 5A837A4F
+P 8150 4200
+F 0 "#PWR208" H 8150 3950 50  0001 C CNN
+F 1 "GND" H 8150 4050 50  0000 C CNN
+F 2 "" H 8150 4200 50  0001 C CNN
+F 3 "" H 8150 4200 50  0001 C CNN
+	1    8150 4200
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR209
+U 1 1 5A837A55
+P 8150 4300
+F 0 "#PWR209" H 8150 4050 50  0001 C CNN
+F 1 "GND" H 8150 4150 50  0000 C CNN
+F 2 "" H 8150 4300 50  0001 C CNN
+F 3 "" H 8150 4300 50  0001 C CNN
+	1    8150 4300
+	0    1    -1   0   
+$EndComp
+Text GLabel 8550 2450 0    51   Input ~ 0
+RXD1
+Text GLabel 8550 2550 0    51   Input ~ 0
+TXD1
+Text GLabel 8500 2650 0    51   Input ~ 0
+PA0
+Text GLabel 8500 2750 0    51   Input ~ 0
+PA1
+Text GLabel 8500 2850 0    51   Input ~ 0
+PA2
+Text GLabel 8500 2950 0    51   Input ~ 0
+PA3
+Text GLabel 8500 3050 0    51   Input ~ 0
+PA4
+Text GLabel 8500 3600 0    51   Input ~ 0
+PD4
+Text GLabel 8500 3700 0    51   Input ~ 0
+PD6
+Text GLabel 8500 3800 0    51   Input ~ 0
+PD7
+Text GLabel 8500 4000 0    51   Input ~ 0
+PB4
+$Comp
+L Conn_01x10_Female J203
+U 1 1 5A837A8D
+P 8800 2550
+F 0 "J203" H 8800 3050 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 8800 1950 50  0000 C CNN
+F 2 "" H 8800 2550 50  0001 C CNN
+F 3 "" H 8800 2550 50  0001 C CNN
+	1    8800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x10_Female J204
+U 1 1 5A837AE5
+P 8800 4000
+F 0 "J204" H 8800 4500 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 8800 3400 50  0000 C CNN
+F 2 "" H 8800 4000 50  0001 C CNN
+F 3 "" H 8800 4000 50  0001 C CNN
+	1    8800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03_Male J202
+U 1 1 5A837DBB
+P 6400 2300
+F 0 "J202" H 6400 2500 50  0000 C CNN
+F 1 "Endstop" H 6400 2100 50  0000 C CNN
+F 2 "" H 6400 2300 50  0001 C CNN
+F 3 "" H 6400 2300 50  0001 C CNN
+	1    6400 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R203
+U 1 1 5A837E81
+P 5800 1900
+F 0 "R203" V 5880 1900 50  0000 C CNN
+F 1 "10k" V 5800 1900 50  0000 C CNN
+F 2 "" V 5730 1900 50  0001 C CNN
+F 3 "" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C202
+U 1 1 5A837ED3
+P 5800 2500
+F 0 "C202" H 5825 2600 50  0000 L CNN
+F 1 "10µ" H 5825 2400 50  0000 L CNN
+F 2 "" H 5838 2350 50  0001 C CNN
+F 3 "" H 5800 2500 50  0001 C CNN
+	1    5800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR205
+U 1 1 5A837F82
+P 5800 1550
+F 0 "#PWR205" H 5800 1400 50  0001 C CNN
+F 1 "+5V" H 5800 1690 50  0000 C CNN
+F 2 "" H 5800 1550 50  0001 C CNN
+F 3 "" H 5800 1550 50  0001 C CNN
+	1    5800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1550 5800 1650
+Wire Wire Line
+	5800 1650 5800 1750
+Wire Wire Line
+	5800 1650 6050 1650
+Wire Wire Line
+	6050 1650 6050 2300
+Wire Wire Line
+	6050 2300 6200 2300
+Connection ~ 5800 1650
+Wire Wire Line
+	6200 2200 5800 2200
+Wire Wire Line
+	5800 2200 5600 2200
+Text GLabel 5600 2200 0    51   Input ~ 0
+PB4
+Wire Wire Line
+	5800 2050 5800 2200
+Wire Wire Line
+	5800 2200 5800 2350
+Connection ~ 5800 2200
+Wire Wire Line
+	5800 2650 5800 2750
+Wire Wire Line
+	5800 2750 5800 2950
+$Comp
+L GND #PWR206
+U 1 1 5A838168
+P 5800 2950
+F 0 "#PWR206" H 5800 2700 50  0001 C CNN
+F 1 "GND" H 5800 2800 50  0000 C CNN
+F 2 "" H 5800 2950 50  0001 C CNN
+F 3 "" H 5800 2950 50  0001 C CNN
+	1    5800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2750 6050 2750
+Wire Wire Line
+	6050 2750 6050 2400
+Wire Wire Line
+	6050 2400 6200 2400
+Connection ~ 5800 2750
+$EndSCHEMATC
