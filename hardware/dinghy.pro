@@ -1,4 +1,4 @@
-update=2018 February 12, Monday 23:55:25
+update=2018 February 14, Wednesday 01:51:27
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=libs
 [eeschema/libraries]
 LibName1=dinghy
 LibName2=power

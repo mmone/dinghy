@@ -3,6 +3,7 @@ EESchema-DOCLIB  Version 2.0
 $CMP TMC2130
 D TQFP48
 K trinamic stepper driver
+F https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2130_datasheet.pdf
 $ENDCMP
 #
 #End Doc Library
